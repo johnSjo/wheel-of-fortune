@@ -1,7 +1,7 @@
 /**
  * Created by john.sjostrom on 2016-06-26.
  */
-Wheel.Reel = function(game, config){
+Wheel.Reel = function(game){
     this.game = game;
 
     game.signals.loadAssets.add(this.loadAssets, this);

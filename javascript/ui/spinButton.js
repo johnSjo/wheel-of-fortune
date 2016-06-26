@@ -1,7 +1,7 @@
 /**
  * Created by john.sjostrom on 2016-06-26.
  */
-Wheel.SpinButton = function(game, config){
+Wheel.SpinButton = function(game){
     this.game = game;
 
     game.signals.loadAssets.add(this.loadAssets, this);
@@ -32,21 +32,8 @@ Wheel.SpinButton.prototype = {
         button.anchor = new Phaser.Point(0.5, 0.5);
         buttonText.anchor = new Phaser.Point(0.5, 0.5);
 
-        button.onInputOver.add(me.over, this);
-        button.onInputOut.add(me.out, this);
-        button.onInputUp.add(me.up, this);
-
         me.button = button;
         me.buttonText = buttonText;
-    },
-
-    over : function(){
-    },
-
-    out : function(){
-    },
-
-    up : function(){
     },
 
     actionOnClick : function(){
